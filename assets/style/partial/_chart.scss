@@ -1,0 +1,43 @@
+//Charte graphique//
+
+/* Font (Face) */
+
+@font-face {
+    font-family: 'dreams';
+    src: url('../font/dreams.ttf');
+}
+
+@font-face {
+    font-family: 'ABeeZee';
+    src: url('../font/ABeeZee.ttf');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../font/Pacifico.ttf');
+}
+
+/* Variable */
+
+$backgroundDark: #294C63;
+$backgroundLight:rgb(255, 253, 240);
+
+$backgroundContact: #FE8100;
+
+$colorDark:#294C63;
+$colorLight: rgb(255, 253, 240);
+$colorTitle: #00B5B5;
+$colorButtonOver: rgb(0, 87, 87);
+$colorGray: rgb(145, 145, 145);
+
+$fontTitle : 'dreams';
+$fontText : 'ABeeZee';
+$fontButton : 'ABeeZee';
+
+/* Mixin */
+
+@mixin textConfig($align,$color,$size){
+    text-align: $align;
+    color: $color;
+    font-size: $size;
+}

@@ -1,0 +1,56 @@
+//Animation CS ( bloc presentation )
+
+.rect {
+    width: 37%;
+    position: absolute;
+    left: -15vw;
+    margin-top: 18vh;
+    transform: rotate(-45deg);
+    opacity: 0.2;
+    rect {
+        animation: dash 10s cubic-bezier(.455, .03, .515, .955) infinite alternate;
+        stroke: $colorTitle;
+        display: inline-block;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 0; 
+        @keyframes dash {
+            to {
+                
+                stroke-dasharray: 200;
+                stroke-dashoffset: 400;
+            }
+        }
+    }
+}
+
+.rect2 {
+    position: absolute; 
+    left: 93vw;
+    margin-top: 57vh;
+    transform: rotate(-45deg);
+    opacity: 0.2;
+    rect {
+        animation: dash2 10s cubic-bezier(.455, .03, .515, .955) infinite alternate;
+        stroke: $colorTitle;
+        display: inline-block;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0; // animation: dash 5s linear forwards;
+        @keyframes dash2 {
+            to {
+                stroke-dasharray: 500;
+                stroke-dashoffset: 400;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rect {
+        left: -100vw;
+        margin-top: 20vh;
+    }
+    .rect2 {
+        left: 115vw;
+        margin-top: 53vh;
+    }
+}

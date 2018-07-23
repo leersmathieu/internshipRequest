@@ -1,0 +1,77 @@
+#skill {
+    .centerDiv {
+        padding-top: 7vh;
+    }
+    input {
+        color: hsl(58, 78%, 92%);
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        border: 5px solid hsl(58, 78%, 92);
+        border-radius: 5px;
+        font-size: 200%;
+        width: 26vw;
+        height: 5vh;
+        margin-bottom: 10%;
+        padding: 5px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        box-shadow: inset 0px 0px 0px 1px black,
+                    0px 0px 0px 1px black;                             
+    }
+}
+
+#allSkills {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 7vh;
+    
+}
+
+.skill {
+    display: inline-block;
+    width: 45%;
+}
+
+.moreSkills {
+    text-align: center;
+    color: wheat;
+    font-size: 340%;
+    padding-top: 10vh;
+    padding-left: 20px;
+    &:hover {
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #skill {
+        .centerDiv {
+            padding-top: 6vh;
+        }
+        input {
+            color: hsl(58, 78%, 92%);
+            background-color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            border: 5px solid hsl(58, 78%, 92);
+            border-radius: 5px;
+            font-size: 80%;
+            width: 90%;
+            height: 5vh;
+            margin-bottom: 12%;
+            padding: 5px;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            box-shadow: inset 0px 0px 0px 1px black, 0px 0px 0px 1px black;
+        }
+    }
+    .skill {
+
+        margin: 4px;
+        width: 40%;
+        
+    }
+    .moreSkills {
+        padding-top: 6vh;
+    }
+}
+

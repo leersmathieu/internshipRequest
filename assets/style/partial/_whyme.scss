@@ -1,0 +1,53 @@
+#whyMe {
+    #whyMeContent {
+        @include textConfig (left, $colorLight, 1.5vw);
+        width: 60%;
+        margin: auto;
+        padding-top: 10vh;
+        padding-bottom: 12vh;
+        p {
+            line-height: 200%;
+        }
+    }
+}
+    .centerDiv {
+        padding-top: 6vh;
+}
+
+p.binaries {
+    text-align: center;
+    font-size: 0.8vw;
+    width: 100%;
+    text-align: center;
+    color: $colorGray;
+}
+
+@media screen and (max-width: 600px) {
+    #whyMe {
+
+        #whyMeContent {
+            font-size: 13px;
+            width: 92%;
+            margin: auto;
+            padding-top: 14vh;
+            padding-bottom: 13vh;
+            
+            p {
+                line-height: 160%;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .centerDiv {
+        padding-top: 6vh;
+    }
+
+    p.binaries {
+        text-align: center;
+        font-size:  6px;
+        width: 100%;
+        text-align: center;
+        color: $colorGray;
+    }
+}
